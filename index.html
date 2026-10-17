@@ -1,0 +1,358 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>叉烧云 — 节点订阅与线路服务</title><meta name="description" content="叉烧云提供节点订阅与线路服务，整理套餐、设备支持与常见问题，帮助用户按需选择合适的节点方案。"><meta name="keywords" content="叉烧云,节点订阅,线路服务,网络工具,套餐,客户端,常见问题"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-a32d3ed15e.nbgbqor.cn/"><meta property="og:type" content="website"><meta property="og:title" content="叉烧云 — 节点订阅与线路服务"><meta property="og:description" content="叉烧云提供节点订阅与线路服务，整理套餐、设备支持与常见问题，帮助用户按需选择合适的节点方案。"><meta property="og:url" content="https://p-a32d3ed15e.nbgbqor.cn/"><meta property="og:site_name" content="叉烧云"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-a32d3ed15e.nbgbqor.cn/", "name": "叉烧云 — 节点订阅与线路服务", "description": "叉烧云提供节点订阅与线路服务，整理套餐、设备支持与常见问题，帮助用户按需选择合适的节点方案。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="0aa439b6fbfddb060c3f0ed6:ac4fb2099d47a31e40636810402bf0968e1be129191aeb73b25b6ec33406b154:c812bf57ed89324b6747"></head><body id="top"><main><style>
+:root{--ink:#0b0d0c;--ink-2:#14181a;--paper:#f4f4ef;--paper-2:#ecece5;--line:#1e2326;--line-soft:#262b2e;--acid:#b8ff3a;--acid-2:#8fd924;--muted:#9aa39e;--warn:#ff6b3d;--shadow:0 18px 48px rgba(0,0,0,.45);--radius:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--ink);color:var(--paper);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55}
+body{padding:32px 6vw 80px}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto}
+
+/* HERO */
+.hero{position:relative;background:var(--ink-2);border:1px solid var(--line-soft);border-radius:32px;padding:48px 56px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-120px;top:-120px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(184,255,58,.18),transparent 60%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:stretch}
+.hero h1{font-size:clamp(40px,6.4vw,84px);line-height:.96;letter-spacing:-.02em;font-weight:800}
+.hero h1 .acid{color:var(--acid)}
+.hero h1 .strike{display:inline-block;background:var(--acid);color:var(--ink);padding:2px 14px;transform:skew(-6deg);margin-right:6px}
+.hero-lead{margin-top:22px;font-size:17px;color:#c8cfc9;max-width:46ch}
+.hero-meta{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px}
+.hero-meta span{border:1px solid var(--line-soft);background:#10151a;color:#d6dcd3;padding:7px 14px;border-radius:999px;font-size:13px;letter-spacing:.02em}
+.hero-meta span b{color:var(--acid);font-weight:600}
+.hero-anchor{display:flex;gap:18px;margin-top:36px;flex-wrap:wrap}
+.hero-anchor a{font-size:14px;color:#c8cfc9;border-bottom:1px dashed var(--line-soft);padding-bottom:4px}
+.hero-anchor a:hover{color:var(--acid);border-bottom-color:var(--acid)}
+
+.panel{background:#0f1316;border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;gap:18px;box-shadow:var(--shadow)}
+.panel h2{font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.panel-row{display:flex;justify-content:space-between;align-items:center;border-bottom:1px dashed var(--line-soft);padding:10px 0;font-size:14px}
+.panel-row:last-child{border-bottom:none}
+.panel-row b{color:var(--acid);font-weight:600}
+.panel-pill{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--ink);background:var(--acid);padding:4px 12px;border-radius:999px;font-weight:600;align-self:flex-start}
+.panel-cta{margin-top:auto;background:var(--acid);color:var(--ink);text-align:center;padding:16px 20px;border-radius:14px;font-weight:700;font-size:15px;letter-spacing:.06em}
+
+/* SECTION */
+section{margin-top:72px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--line-soft);padding-bottom:18px;margin-bottom:36px;flex-wrap:wrap;gap:12px}
+.sec-head h2{font-size:28px;letter-spacing:-.01em;font-weight:700}
+.sec-head h2 small{display:block;font-size:12px;letter-spacing:.24em;color:var(--muted);text-transform:uppercase;margin-bottom:8px}
+.sec-head p{color:var(--muted);font-size:13px;max-width:36ch;text-align:right}
+
+/* INFO GRID (left big + right cards) */
+.info-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+.lead-card{background:#10151a;border:1px solid var(--line-soft);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow)}
+.lead-card h3{font-size:24px;line-height:1.3;margin-bottom:14px;font-weight:700}
+.lead-card h3 b{color:var(--acid);font-weight:700}
+.lead-card p{color:#c4ccc5;font-size:15px;margin-bottom:12px}
+.kpi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.kpi{background:#0c1115;border-radius:14px;padding:16px;border:1px solid var(--line)}
+.kpi b{display:block;font-size:28px;color:var(--acid);font-weight:700;letter-spacing:-.02em}
+.kpi span{color:var(--muted);font-size:12px;letter-spacing:.04em}
+
+.sub-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.sub{background:#10151a;border:1px solid var(--line-soft);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+.sub h4{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.sub p{font-size:14px;color:#c4ccc5}
+
+/* HOW IT WORKS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{background:#10151a;border:1px solid var(--line-soft);border-radius:var(--radius);padding:24px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.step .no{font-size:62px;font-weight:800;color:#1d2326;letter-spacing:-.04em;position:absolute;right:-6px;bottom:-18px;line-height:1}
+.step h4{font-size:16px;margin-bottom:10px;color:var(--acid);font-weight:700;position:relative;z-index:1}
+.step p{font-size:13px;color:#c4ccc5;position:relative;z-index:1}
+
+/* PLANS TABLE */
+.table-wrap{background:#10151a;border:1px solid var(--line-soft);border-radius:var(--radius);padding:14px;overflow:auto;box-shadow:var(--shadow)}
+table{width:100%;border-collapse:separate;border-spacing:0;min-width:680px}
+thead th{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-align:left;padding:18px 20px;border-bottom:1px solid var(--line-soft)}
+thead th.feat{width:32%}
+tbody td{padding:18px 20px;border-bottom:1px solid var(--line-soft);font-size:14px;color:#c4ccc5;vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+tbody td.name{font-weight:700;color:var(--paper);font-size:15px}
+tbody td.price{color:var(--acid);font-weight:700;font-size:18px}
+tbody td.price small{display:block;color:var(--muted);font-size:11px;font-weight:500;margin-top:4px;letter-spacing:.04em}
+tbody td.feat-h b{color:var(--acid);font-weight:600;display:block;margin-bottom:6px}
+tbody td.feat-h span{display:inline-block;background:#1a2125;color:#d6dcd3;font-size:12px;padding:4px 10px;border-radius:999px;margin:3px 4px 0 0}
+.tag-hot{display:inline-block;background:var(--acid);color:var(--ink);font-size:11px;padding:3px 8px;border-radius:6px;font-weight:700;letter-spacing:.04em;margin-left:6px;vertical-align:middle}
+
+/* CLIENTS */
+.clients{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.client{background:#10151a;border:1px solid var(--line-soft);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+.client .plat{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.client h4{font-size:18px;margin-bottom:8px;font-weight:700}
+.client p{font-size:13px;color:#c4ccc5;margin-bottom:18px}
+.client ul{list-style:none;display:grid;gap:6px;margin-bottom:18px}
+.client li{font-size:13px;color:#d6dcd3;padding-left:14px;position:relative}
+.client li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--acid)}
+.client .dl{display:inline-block;background:#0c1115;border:1px solid var(--acid);color:var(--acid);padding:9px 16px;border-radius:10px;font-size:13px;font-weight:600}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.faq{background:#10151a;border:1px solid var(--line-soft);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+.faq h4{font-size:16px;color:var(--acid);margin-bottom:12px;font-weight:700}
+.faq p{font-size:13.5px;color:#c4ccc5}
+
+/* FOOT */
+footer{margin-top:80px;padding-top:32px;border-top:1px solid var(--line-soft);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted)}
+footer .acid{color:var(--acid)}
+footer a{color:#d6dcd3;margin-left:18px}
+
+@media (max-width:960px){
+body{padding:20px 5vw 60px}
+.hero{padding:32px 24px}
+.hero-grid{grid-template-columns:1fr}
+.info-grid{grid-template-columns:1fr}
+.sub-cards{grid-template-columns:1fr}
+.steps{grid-template-columns:1fr 1fr}
+.clients{grid-template-columns:1fr}
+.faq-grid{grid-template-columns:1fr}
+.hero-meta{gap:6px}
+}
+@media (max-width:520px){
+.steps{grid-template-columns:1fr}
+.kpi-row{grid-template-columns:1fr 1fr}
+}
+</style><div class="wrap">
+
+<header class="hero" id="top">
+<div class="hero-grid">
+<div>
+<h1><span>叉烧云</span><br><span class="acid">订阅一次，</span><br><span class="strike">全设备接管。</span></h1>
+<p class="hero-lead">叉烧云把节点订阅、线路分流和设备管理整合成一套轻量的服务面板。你拿到手的是一条可复制的链接和一份看得懂的账单，剩下的由线路本身去跑。</p>
+<div class="hero-meta">
+<span>节点线路 <b>多协议</b></span>
+<span>设备端 <b>5 台起</b></span>
+<span>计费方式 <b>月 / 年</b></span>
+<span>状态 <b>正在营业</b></span>
+</div>
+<div class="hero-anchor">
+<a href="#about">关于服务</a>
+<a href="#flow">使用流程</a>
+<a href="#plans">套餐对比</a>
+<a href="#client">客户端</a>
+<a href="#faq">常见问题</a>
+</div>
+</div>
+<aside class="panel">
+<span class="panel-pill">● 实时面板</span>
+<h2>核心信息一栏</h2>
+<div class="panel-row"><span>订阅协议</span><b>SS / VLESS / Trojan</b></div>
+<div class="panel-row"><span>设备并发</span><b>3 — 20 台</b></div>
+<div class="panel-row"><span>流量梯度</span><b>100G / 300G / 1000G</b></div>
+<div class="panel-row"><span>计费周期</span><b>月付 · 年付</b></div>
+<div class="panel-row"><span>优先级队列</span><b>基础 / 优先 / VIP</b></div>
+<div class="panel-row"><span>服务形态</span><b>纯线上运营</b></div>
+<div class="panel-cta">前往套餐对比 →</div>
+</aside>
+</div>
+</header>
+
+<section id="about">
+<div class="sec-head">
+<h2><small>01 — 了解服务</small>关于叉烧云</h2>
+<p>一段简介，两句要点，三项约束。</p>
+</div>
+<div class="info-grid">
+<article class="lead-card">
+<h3>我们只做<b>订阅与线路</b>这一件事。</h3>
+<p>叉烧云不打算做成大而全的网络工具，我们更愿意把节点、订阅链接、流量统计和客户端安装指引放在同一块屏幕上。用户进门就能看到价格、流量、设备数和节点标签，不需要点三层菜单。</p>
+<p>每条线路都配有一份可读的说明，写清协议、适用人群和注意事项。我们相信看得见的参数比一句“极速稳定”更接近事实。</p>
+<p>如果你正在找一个偏安静、偏克制的服务入口，叉烧云可以作为一个参考。</p>
+<div class="kpi-row">
+<div class="kpi"><b>3</b><span>套餐档位</span></div>
+<div class="kpi"><b>5+</b><span>客户端支持</span></div>
+<div class="kpi"><b>0</b><span>捆绑广告</span></div>
+</div>
+</article>
+<div class="sub-cards">
+<div class="sub">
+<h4>不做的事</h4>
+<p>不强制注册多个账号，不索要手机号和实名信息，不会把订阅链接交给第三方分发。所有账单一律在站内查看。</p>
+</div>
+<div class="sub">
+<h4>做好的事</h4>
+<p>把订阅信息、客户端下载、流量计数和续费入口放进同一个面板，让你能用最少的步骤拿到节点并完成切换。</p>
+</div>
+<div class="sub">
+<h4>价格透明</h4>
+<p>月付与年付价格写在一起，续费按当前页面显示金额结算，不存在隐藏的“首月优惠”。</p>
+</div>
+<div class="sub">
+<h4>设备友好</h4>
+<p>提供手机、电脑和路由器三个场景的客户端说明，每种客户端都附一段图文指引，不让用户自己摸索。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="flow">
+<div class="sec-head">
+<h2><small>02 — 使用流程</small>从注册到切换节点的四步</h2>
+<p>每步不超过一分钟能看懂。</p>
+</div>
+<div class="steps">
+<div class="step">
+<span class="no">01</span>
+<h4>挑选套餐</h4>
+<p>在套餐页对照月付和年付价格，按流量与设备数确定档位；确认后复制订阅链接。</p>
+</div>
+<div class="step">
+<span class="no">02</span>
+<h4>下载客户端</h4>
+<p>根据设备类型选择对应客户端，按页面上的安装步骤操作，不需要配置额外参数。</p>
+</div>
+<div class="step">
+<span class="no">03</span>
+<h4>导入订阅</h4>
+<p>把订阅链接粘贴到客户端的“订阅”字段，刷新一次即可拉取当前套餐下的全部节点。</p>
+</div>
+<div class="step">
+<span class="no">04</span>
+<h4>开始使用</h4>
+<p>挑选一个延迟较低的节点启用，流量统计会在套餐页同步更新，可随时查看剩余量。</p>
+</div>
+</div>
+</section>
+
+<section id="plans">
+<div class="sec-head">
+<h2><small>03 — 套餐</small>横向对比三档套餐</h2>
+<p>直接看差异，不靠形容词。</p>
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th class="feat">套餐权益</th>
+<th>基础版</th>
+<th>旗舰版<span class="tag-hot">推荐</span></th>
+<th>团队版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="feat-h"><b>月付价格</b><span>按月结算，可随时取消</span></td>
+<td class="price">¥15/月<small>年付 ¥150/年</small></td>
+<td class="price">¥35/月<small>年付 ¥350/年</small></td>
+<td class="price">¥85/月<small>年付 ¥850/年</small></td>
+</tr>
+<tr>
+<td class="feat-h"><b>每月流量</b><span>超额后限速</span></td>
+<td class="feat-h">100GB 流量额度</td>
+<td class="feat-h">300GB 流量额度</td>
+<td class="feat-h">1000GB 流量额度</td>
+</tr>
+<tr>
+<td class="feat-h"><b>同时在线</b><span>设备并发数</span></td>
+<td>3 台设备</td>
+<td>5 台设备</td>
+<td>20 台设备</td>
+</tr>
+<tr>
+<td class="feat-h"><b>流媒体</b><span>平台解锁情况</span></td>
+<td>基础流媒体解锁</td>
+<td>全节点原生解锁</td>
+<td>全节点原生解锁</td>
+</tr>
+<tr>
+<td class="feat-h"><b>线路池</b><span>节点来源说明</span></td>
+<td>普通线路节点池</td>
+<td>含 IPLC 专线游戏加速优化</td>
+<td>含 VIP 专属高带宽节点</td>
+</tr>
+<tr>
+<td class="feat-h"><b>支持通道</b><span>咨询与工单</span></td>
+<td>邮箱工单</td>
+<td>7×24 优先工单支持</td>
+<td>专属客户经理服务</td>
+</tr>
+<tr>
+<td class="feat-h"><b>定制项</b><span>套餐内可叠加</span></td>
+<td>—</td>
+<td>—</td>
+<td>支持企业定制路由</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="client">
+<div class="sec-head">
+<h2><small>04 — 客户端</small>设备与第三方工具</h2>
+<p>按常见设备分组，找一个能用的就行。</p>
+</div>
+<div class="clients">
+<article class="client">
+<div class="plat">DESKTOP</div>
+<h4>桌面系统</h4>
+<p>适用于 Windows 与 macOS 的图形化客户端，复制订阅链接后即可一键拉取节点。</p>
+<ul>
+<li>支持协议：SS / VLESS / Trojan</li>
+<li>导入方式：订阅链接 / 二维码</li>
+<li>系统路由：可手动开关</li>
+</ul>
+<a class="dl" href="#">查看桌面端说明</a>
+</article>
+<article class="client">
+<div class="plat">MOBILE</div>
+<h4>移动设备</h4>
+<p>iOS 与 Android 客户端在首次启动时需要允许添加 VPN 配置，按提示授权即可。</p>
+<ul>
+<li>订阅刷新：下拉立即更新</li>
+<li>节点分组：自动按地区归类</li>
+<li>分流规则：内置常见列表</li>
+</ul>
+<a class="dl" href="#">查看移动端说明</a>
+</article>
+<article class="client">
+<div class="plat">ROUTER / OPENWRT</div>
+<h4>路由器固件</h4>
+<p>提供可在 OpenWrt 与常见第三方固件上直接导入的订阅脚本，适合需要长期挂机的场景。</p>
+<ul>
+<li>运行方式：本地订阅脚本</li>
+<li>失败回退：保留上一份节点</li>
+<li>流量统计：通过订阅接口同步</li>
+</ul>
+<a class="dl" href="#">查看路由器端说明</a>
+</article>
+</div>
+</section>
+
+<section id="faq">
+<div class="sec-head">
+<h2><small>05 — 常见问题</small>FAQ 双栏速查</h2>
+<p>选两个最关心的问题往下翻。</p>
+</div>
+<div class="faq-grid">
+<article class="faq">
+<h4>订阅链接会不会被泄露？</h4>
+<p>订阅链接只对订阅者本人可见，刷新后会重新生成加密串。我们不会把链接写入邮件正文，也不会出现在搜索引擎快照里。建议拿到链接后立即复制到本地客户端，不要再二次转发。</p>
+</article>
+<article class="faq">
+<h4>套餐之间可以随时切换吗？</h4>
+<p>可以。月付套餐在当前周期结束前升级到更高档位，差价按剩余天数折算；降到更低的档位则在下一周期生效。年付套餐到期前 7 天可选择续费或换档。</p>
+</article>
+<article class="faq">
+<h4>流量用完会怎样？</h4>
+<p>套餐流量用尽后，节点会进入限速状态，带宽压低到不影响在线但不便于高码率观看。下个月度周期重新计算额度，也可以手动购买加油包恢复全速。</p>
+</article>
+<article class="faq">
+<h4>支持哪些支付方式？</h4>
+<p>站内默认列出常用的在线支付渠道，具体可用方式以下单页面提示为准。若需要企业抬头，可在订单页备注开票信息，由客户经理统一跟进。</p>
+</article>
+<article class="faq">
+<h4>订阅能否多人共用？</h4>
+<p>同一份订阅按账号并发设备数计费。多人共用请使用团队版套餐，或各自注册独立账号以避免互相挤占流量额度。</p>
+</article>
+<article class="faq">
+<h4>遇到节点连不上怎么办？</h4>
+<p>先在客户端里手动刷新一次订阅，再切换到另一个节点的延迟测试；若仍不可用，请通过套餐内的支持通道提交工单，写明节点名称和报错截图。</p>
+</article>
+</div>
+</section>
+
+<footer>
+<div>© <span class="acid">叉烧云</span> — 节点订阅与线路服务</div>
+<div><a href="#top">回到顶部</a><a href="#plans">套餐</a><a href="#faq">FAQ</a></div>
+</footer>
+
+</div></main><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
